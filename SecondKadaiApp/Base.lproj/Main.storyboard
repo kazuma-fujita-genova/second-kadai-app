@@ -17,20 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8w-dD-von">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8w-dD-von">
                                 <rect key="frame" x="92" y="140" width="191" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BjG-NH-OG3">
-                                <rect key="frame" x="139" y="205" width="97" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BjG-NH-OG3">
+                                <rect key="frame" x="92" y="205" width="191" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGA-Ru-T6S">
-                                <rect key="frame" x="172" y="279" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGA-Ru-T6S">
+                                <rect key="frame" x="92" y="279" width="191" height="30"/>
                                 <state key="normal" title="送信"/>
                                 <connections>
                                     <segue destination="CzK-T3-dNH" kind="show" id="f4Z-I6-rub"/>
@@ -39,8 +39,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BjG-NH-OG3" firstAttribute="top" secondItem="f8w-dD-von" secondAttribute="bottom" constant="44" id="2Rh-4R-RDs"/>
+                            <constraint firstItem="hGA-Ru-T6S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6xJ-0f-WqA"/>
+                            <constraint firstItem="BjG-NH-OG3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JxU-03-kZf"/>
+                            <constraint firstItem="f8w-dD-von" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="Kld-WE-c9N"/>
                             <constraint firstItem="hGA-Ru-T6S" firstAttribute="width" secondItem="f8w-dD-von" secondAttribute="width" id="cgN-5n-sNn"/>
+                            <constraint firstItem="f8w-dD-von" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gW3-lY-uYr"/>
                             <constraint firstItem="BjG-NH-OG3" firstAttribute="width" secondItem="f8w-dD-von" secondAttribute="width" id="jem-kg-qrp"/>
+                            <constraint firstItem="hGA-Ru-T6S" firstAttribute="top" secondItem="BjG-NH-OG3" secondAttribute="bottom" constant="44" id="zcC-sO-C6f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -59,16 +65,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここに名前が表示されます" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-sA-di8">
-                                <rect key="frame" x="92" y="133" width="208" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここに名前が表示されます" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zht-sA-di8">
+                                <rect key="frame" x="83.5" y="136" width="208" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuO-TF-UMH">
-                                <rect key="frame" x="172" y="229" width="31" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GuO-TF-UMH">
+                                <rect key="frame" x="172" y="222" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="jOY-8y-u7S" kind="unwind" unwindAction="unwind:" id="6gA-bs-xqk"/>
@@ -76,6 +80,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zht-sA-di8" firstAttribute="centerX" secondItem="imY-2C-cWE" secondAttribute="centerX" id="B4l-Qi-vG3"/>
+                            <constraint firstItem="GuO-TF-UMH" firstAttribute="centerX" secondItem="imY-2C-cWE" secondAttribute="centerX" id="fzk-Ip-Dor"/>
+                            <constraint firstItem="GuO-TF-UMH" firstAttribute="top" secondItem="Zht-sA-di8" secondAttribute="bottom" constant="65" id="nSF-nU-ex3"/>
+                            <constraint firstItem="Zht-sA-di8" firstAttribute="top" secondItem="K1u-Bv-SVI" secondAttribute="top" constant="116" id="w5V-q1-7ZA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="K1u-Bv-SVI"/>
                     </view>
                     <connections>
